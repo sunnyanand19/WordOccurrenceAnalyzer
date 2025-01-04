@@ -1,0 +1,2 @@
+This skill badge course is designed to offer hands-on experience through labs,
+guiding participants in gaining practical expertise in modernizing Java applications on the Google Cloud.

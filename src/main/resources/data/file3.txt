@@ -1,0 +1,7 @@
+This learning path aims to upskill Google Cloud partners to perform the specific tasks
+associated with the priority workload. Learners will discover the specific tasks in rehosting
+applications from on-premise to Google Cloud. It also aims to re-platform applications to run in GKE.
+Learners will perform the tasks of Migrating MySQL, Angular, and Java applications from their
+on-premise machines to Google Cloud VM instances.
+Sample code will be used during the migration.
+This full learning path will take about one hour and thirty minutes to complete.

@@ -1,0 +1,3 @@
+This course aims to upskill Google Cloud partners to perform specific tasks in
+rehosting applications from on-premise to Google Cloud. It also aims to re-platform applications to
+run in GKE. Learners will perform the tasks of Migrating MySQL, Angular.
