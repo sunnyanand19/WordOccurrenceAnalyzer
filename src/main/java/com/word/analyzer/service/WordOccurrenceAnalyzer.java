@@ -16,13 +16,13 @@ import static com.word.analyzer.util.AppConstants.FOLDER_PATH;
 @Service
 public class WordOccurrenceAnalyzer {
 
-    private Logger logger = Logger.getLogger(WordOccurrenceAnalyzer.class.getName());
+    private final Logger logger = Logger.getLogger(WordOccurrenceAnalyzer.class.getName());
 
     public List<String> findNthOccurrence(int frequency) {
 
         Map<String, Integer> wordMap = new HashMap<>();
         //Get all the files
-        List<Path> files = null;
+        List<Path> files;
         try {
             files = Files.walk(Paths.get(FOLDER_PATH))
                     .filter(Files::isRegularFile)
