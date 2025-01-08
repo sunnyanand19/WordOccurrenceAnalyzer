@@ -8,4 +8,7 @@ Requirements
 *  Read all the files from the specified folder.
 *  Process the content of each file efficiently to compute word frequencies.
 *  Implement a mechanism to retrieve the nth most frequent word dynamically.
-*  Ensure the program is designed for high performance using Java's concurrency mechanisms to handle multiple files in parallel.
+
+CURL command
+=============
+curl -X POST -F 'frequency=1' http://localhost:8090/kafka/publish
