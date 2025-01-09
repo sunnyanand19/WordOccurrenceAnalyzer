@@ -1,0 +1,24 @@
+name: Commit Stage
+on: push
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4     #Checks out the current Git repository (catalog-service)
+      - name: Set up JDK
+        uses: actions/setup-java@v4   #Installs and configures a Java runtime
+        with:                         #Defines which version, distribution, and cache type to use
+          distribution: 'oracle'
+          java-version: '22'
+          cache: maven
+      - name: Build, unit tests and integration tests
+        run: mvn --batch-mode --update-snapshots verify
+
+#Ensures the Gradle wrapper is executable, solving Windows incompatibilities
+#Runs the Gradle build task, which compiles the codebase and runs unit and integration tests
