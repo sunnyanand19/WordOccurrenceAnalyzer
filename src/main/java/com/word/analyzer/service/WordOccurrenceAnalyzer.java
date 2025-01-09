@@ -44,7 +44,9 @@ public class WordOccurrenceAnalyzer {
             }
         }
         logger.info("Words and their frequency: {}", wordMap);
-        return getWordsByFrequency(frequency, wordMap);
+        var wordsByFrequency = getWordsByFrequency(frequency, wordMap);
+        logger.info("Nth occurrence of words: {}", wordsByFrequency);
+        return wordsByFrequency;
     }
 
     private List<String> getWordsByFrequency(int frequency, Map<String, Integer> wordMap) {
